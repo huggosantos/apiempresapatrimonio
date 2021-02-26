@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /empresa/app
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postegres
+    url: jdbc:postgresql://localhost:5432/patrimonioempresa
+    platform: postgres
+    initialization-mode: always
+    continue-on-error: true
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    database: postgresql
